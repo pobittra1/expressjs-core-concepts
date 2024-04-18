@@ -8,6 +8,9 @@ app.get("/", (req, res) => {
 app.get("/home", (req, res) => {
   res.send("this is home");
 });
+app.get("/card", (req, res) => {
+    res.sendFile(__dirname+ "/index.html");
+  });
 
 app.get("/posts", (req, res) => {
   res.send("this is posts");
